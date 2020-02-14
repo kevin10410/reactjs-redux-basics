@@ -1,9 +1,9 @@
-export const SET_NAME = (state, payload) => ({
-  ...state,
-  name: payload,
+export const SET_NAME = (name) => ({
+  type: 'SET_NAME',
+  name,
 });
 
-export const SET_AGE = (state, payload) => ({
-  ...state,
-  age: payload,
+export const SET_AGE = (age) => ({
+  type: 'SET_AGE',
+  age,
 });
