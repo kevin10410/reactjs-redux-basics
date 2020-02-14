@@ -7,16 +7,16 @@ const initialUserState = {
 
 const userReducer = (state = initialUserState, action) => {
   switch (action.type) {
-    case 'SET_NAME':
+    case 'SET_NAME_FULFILLED':
       state = {
         ...state,
-        name: action.name,
+        name: action.payload,
       };
       break;
     case 'SET_AGE':
       state = {
         ...state,
-        age: action.age,
+        age: action.payload,
       }
       break;
   }
